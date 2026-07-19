@@ -1,5 +1,7 @@
 # 健身訓練 App（繁體中文）
 
+**線上版本：https://tuen-ai.github.io/gymapp/** （push 後由 GitHub Actions 自動部署）
+
 手機優先嘅健身 Web App / PWA，內置 **1,324 個健身動作**（繁體中文名稱＋教學步驟＋GIF 示範），
 支援訓練計劃、訓練紀錄同進度統計。所有資料儲存喺本機瀏覽器（IndexedDB），毋須登入、毋須後端。
 

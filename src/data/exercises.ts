@@ -7,7 +7,7 @@ let pending: Promise<Exercise[]> | null = null
 export function loadExercises(): Promise<Exercise[]> {
   if (cache) return Promise.resolve(cache)
   if (!pending) {
-    pending = fetch('/data/exercises.json')
+    pending = fetch(`${import.meta.env.BASE_URL}data/exercises.json`)
       .then((r) => {
         if (!r.ok) throw new Error(`載入動作資料失敗（HTTP ${r.status}）`)
         return r.json()

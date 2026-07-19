@@ -11,7 +11,8 @@ import PlanEditPage from './pages/PlanEdit.tsx'
 import WorkoutPage from './pages/Workout.tsx'
 import HistoryPage from './pages/History.tsx'
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
   {
     path: '/',
     element: <Layout />,
@@ -25,8 +26,10 @@ const router = createBrowserRouter([
       { path: 'workout', element: <WorkoutPage /> },
       { path: 'history', element: <HistoryPage /> },
     ],
-  },
-])
+    },
+  ],
+  { basename: import.meta.env.BASE_URL },
+)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
