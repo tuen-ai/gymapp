@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 font-sans antialiased;
+  overscroll-behavior-y: none;
+}
+
+/* iOS safe area 用 */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
