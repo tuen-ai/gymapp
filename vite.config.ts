@@ -37,7 +37,7 @@ export default defineConfig({
             options: { cacheName: 'exercise-data' },
           },
           {
-            urlPattern: /^https:\/\/cdn\.jsdelivr\.net\/.*\.(jpg|gif)$/,
+            urlPattern: /^https:\/\/(cdn\.jsdelivr\.net|raw\.githubusercontent\.com)\/.*\.(jpg|gif)$/,
             handler: 'CacheFirst',
             options: {
               cacheName: 'exercise-media',
