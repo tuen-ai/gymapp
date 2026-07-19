@@ -1,8 +1,9 @@
 name: 部署到 GitHub Pages
 
+# 注意：github-pages environment 保護規則只允許 main 部署
 on:
   push:
-    branches: [claude/gym-app-design-4yrhx0, main]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
